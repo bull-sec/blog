@@ -14,7 +14,18 @@ Please make sure that all information stored within this has been sanitised to p
 Cheers,
 ```
 
-*If possible try to keep all your notes in the third person, i.e. use we instead of "I"*
+*If possible try to keep all your notes in the third person, i.e. use "we" instead of "I"*
 
+[![Jupyter Book Badge](https://jupyterbook.org/badge.svg)](http://jupyterbook.org)
+
+## Additional Notes
+
+This is now a GitHub Pages site!
+
+[Github Pages Link](https://bull-sec.github.io/blog/)
+
+It's pretty damn cool!
+
+---
 
 
