@@ -6,53 +6,54 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Welcome to the Jungle &#8212; The InfoSec Bible</title>
+    <title>PowerShell for Pentesters &#8212; The InfoSec Bible</title>
     
-  <link href="_static/css/theme.css" rel="stylesheet">
-  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     
       
 
     
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Windows 101" href="windows/101.html" />
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Linux 101 &amp; Privilege Escalation" href="../linux/index.html" />
+    <link rel="prev" title="Running Bloodhound" href="bluthund.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -72,26 +73,26 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="index.html">
+    <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
         
       
       
-      <img src="_static/logo.png" class="logo" alt="logo">
+      <img src="../_static/logo.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">The InfoSec Bible</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 current">
-  <a class="reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
    Welcome to the Jungle
   </a>
  </li>
@@ -101,19 +102,19 @@
   Windows
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="windows/101.html">
+  <a class="reference internal" href="101.html">
    Windows 101
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="windows/bluthund.html">
+  <a class="reference internal" href="bluthund.html">
    Running Bloodhound
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="windows/powershell101.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    PowerShell for Pentesters
   </a>
  </li>
@@ -125,7 +126,7 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="linux/index.html">
+  <a class="reference internal" href="../linux/index.html">
    Linux 101 &amp; Privilege Escalation
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
@@ -135,12 +136,12 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="linux/101.html">
+    <a class="reference internal" href="../linux/101.html">
      Linux 101
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="linux/privesc.html">
+    <a class="reference internal" href="../linux/privesc.html">
      Linux Privilege Escalation
     </a>
    </li>
@@ -154,12 +155,12 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="notebooks.html">
+  <a class="reference internal" href="../notebooks.html">
    Content with notebooks
   </a>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="cyberdefenders/index.html">
+  <a class="reference internal" href="../cyberdefenders/index.html">
    CyberDefenders.org
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
@@ -169,7 +170,7 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="cyberdefenders/blueteam.html">
+    <a class="reference internal" href="../cyberdefenders/blueteam.html">
      BlueTeam Training
     </a>
    </li>
@@ -183,7 +184,7 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="hackthebox/easy/index.html">
+  <a class="reference internal" href="../hackthebox/easy/index.html">
    HTB - Easy Boxes
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
@@ -193,14 +194,14 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="hackthebox/easy/easybox.html">
+    <a class="reference internal" href="../hackthebox/easy/easybox.html">
      EASY BOX
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="hackthebox/medium/index.html">
+  <a class="reference internal" href="../hackthebox/medium/index.html">
    HTB - Medium Boxes
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
@@ -210,14 +211,14 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="hackthebox/medium/mediumbox.html">
+    <a class="reference internal" href="../hackthebox/medium/mediumbox.html">
      MEDIUM BOX
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="hackthebox/hard/index.html">
+  <a class="reference internal" href="../hackthebox/hard/index.html">
    HTB - Hard Boxes
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
@@ -227,14 +228,14 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="hackthebox/hard/hardbox.html">
+    <a class="reference internal" href="../hackthebox/hard/hardbox.html">
      HARD BOX
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="hackthebox/insane/index.html">
+  <a class="reference internal" href="../hackthebox/insane/index.html">
    HTB - Insane
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
@@ -244,7 +245,7 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="hackthebox/insane/insanebox.html">
+    <a class="reference internal" href="../hackthebox/insane/insanebox.html">
      INSANE BOX
     </a>
    </li>
@@ -291,7 +292,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/intro.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/windows/powershell101.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -311,7 +312,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fwindows/powershell101.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -338,8 +339,18 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#additional-notes">
-   Additional Notes
+  <a class="reference internal nav-link" href="#potential-powershell-locations">
+   Potential PowerShell Locations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-very-basics">
+   The Very Basics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#functions">
+   Functions
   </a>
  </li>
 </ul>
@@ -353,34 +364,58 @@
         
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-the-jungle">
-<h1>Welcome to the Jungle<a class="headerlink" href="#welcome-to-the-jungle" title="Permalink to this headline">¶</a></h1>
-<p>Finally decided that there needs to be a central repository of knowledge.</p>
-<p>Played around with a lot of static site generators, this one is the simplest to use in the sense that the Markdown files it consumes are just pure Markdown and don’t require some special formatting or header in order to work properly. The <code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">Header</span></code> is the title of the page and the link you’ll see in the side bar.</p>
-<p>Everything relies on the <code class="docutils literal notranslate"><span class="pre">_toc.yaml</span></code> and <code class="docutils literal notranslate"><span class="pre">_config.yaml</span></code> files that you’ll find in the build folder. Also included in there is a script to perform the build, so all you’ll need to do is update the <code class="docutils literal notranslate"><span class="pre">_toc.yaml</span></code> with the addition(s) that you’ve made to the Jupyter Book.</p>
-<p>Speaking of Jupyter, yes, this can do Jupyter Notebook things, which means it can be used as a place to store playbooks for incident response and things like that.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Please make sure that all information stored within this has been sanitised to prevent any unintentional data leakage or Doxxxing.</p>
-<p>Cheers,</p>
-</div>
-<p><em>If possible try to keep all your notes in the third person, i.e. use “we” instead of “I”</em></p>
-<p><a class="reference external" href="http://jupyterbook.org"><img alt="Jupyter Book Badge" src="https://jupyterbook.org/badge.svg" /></a></p>
-<section id="additional-notes">
-<h2>Additional Notes<a class="headerlink" href="#additional-notes" title="Permalink to this headline">¶</a></h2>
-<p>This is now a GitHub Pages site!</p>
-<p><a class="reference external" href="https://bull-sec.github.io/blog/">Github Pages Link</a></p>
-<p>It’s pretty damn cool!</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="powershell-for-pentesters">
+<h1>PowerShell for Pentesters<a class="headerlink" href="#powershell-for-pentesters" title="Permalink to this headline">¶</a></h1>
+<section id="potential-powershell-locations">
+<h2>Potential PowerShell Locations<a class="headerlink" href="#potential-powershell-locations" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>32-bit (x86) PowerShell executable: <code class="docutils literal notranslate"><span class="pre">%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe</span></code></p></li>
+<li><p>64-bit (x64) Powershell executable: <code class="docutils literal notranslate"><span class="pre">%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe</span></code></p></li>
+<li><p>32-bit (x86) Powershell ISE executable: <code class="docutils literal notranslate"><span class="pre">%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell_ise.exe</span></code></p></li>
+<li><p>64-bit (x64) Powershell ISE executable: <code class="docutils literal notranslate"><span class="pre">%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell_ise.exe</span></code></p></li>
+</ul>
 </section>
-<hr class="docutils" />
-<div class="toctree-wrapper compound">
+<section id="the-very-basics">
+<h2>The Very Basics<a class="headerlink" href="#the-very-basics" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Get-ChildItem <span class="o">=</span> ls or dir.
+
+<span class="p">|</span> <span class="o">=</span> pipe, super powerful in PowerShell <span class="o">(</span>as it is in bash<span class="o">)</span>, used to fork processes/functions through each other.
+
+Get-Help <span class="o">=</span> Help command, all functions
+
+Also:
+
+Help &lt;<span class="k">function</span>-name&gt;
+</pre></div>
 </div>
-<div class="toctree-wrapper compound">
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nb">Invoke-HelloWorld</span> <span class="p">{</span>
+    <span class="nv">$blah</span> <span class="p">=</span> <span class="s2">&quot;Hello World&quot;</span><span class="p">;</span>
+    <span class="nb">Write-Output</span> <span class="nv">$blah</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
 </div>
-<div class="toctree-wrapper compound">
+<p>We can invoke this in a few ways.</p>
+<p>They all amount to the same thing, but one may be more suited to your particular situation than the other.</p>
+<p>We can just type the above out then call <code class="docutils literal notranslate"><span class="pre">Invoke-HelloWorld</span></code>.</p>
+<p>If we save the script to a file (“HelloWorld.ps1”) we can do something like:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">.</span> <span class="p">.\</span><span class="n">HelloWorld</span><span class="p">.</span><span class="n">ps1</span>
+<span class="nb">Invoke-HelloWorld</span>
+</pre></div>
 </div>
-<div class="toctree-wrapper compound">
+<p>And that will fire the script.</p>
+<p>The last (the last main way at least as there are lots of others) is to just modify the script to call whatever function you want to call right at the bottom.</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="nb">Invoke-HelloWorld</span> <span class="p">{</span>
+    <span class="nv">$blah</span> <span class="p">=</span> <span class="s2">&quot;Hello World&quot;</span><span class="p">;</span>
+    <span class="nb">Write-Output</span> <span class="nv">$blah</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nb">Invoke-HelloWorld</span>
+</pre></div>
 </div>
+<p>This last one is useful for things like reverse shells that you want to fire as soon as they land, and used in conjunction with an <code class="docutils literal notranslate"><span class="pre">IEX</span></code> cradle this is a great way to deploy payloads to a target machine without having to write anything to disk.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -396,7 +431,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./."
+            path: "./windows"
         },
         predefinedOutput: true
     }
@@ -407,11 +442,18 @@
               
         
             <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="windows/101.html" title="next page">
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="bluthund.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Running Bloodhound</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../linux/index.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Windows 101</p>
+        <p class="prev-next-title">Linux 101 &amp; Privilege Escalation</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -435,7 +477,7 @@
       </div>
     </div>
   
-  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>

