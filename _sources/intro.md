@@ -1,4 +1,4 @@
-# Welcome to the JankYard:tm:
+# Welcome to the JankYard™
 
 Finally decided that there needs to be a central repository of knowledge.
 
