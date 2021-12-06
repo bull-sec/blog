@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Linux 101 &amp; Privilege Escalation &#8212; The InfoSec Bible</title>
+    <title>Linux Tutorials &#8212; The InfoSec Bible</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -103,20 +103,32 @@
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../windows/101.html">
-   Windows 101
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../windows/index.html">
+   Windows Tutorials
   </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../windows/bluthund.html">
-   Running Bloodhound
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../windows/powershell101.html">
-   PowerShell for Pentesters
-  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../windows/101.html">
+     Windows 101
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../windows/bluthund.html">
+     BloodHound 101
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../windows/powershell101.html">
+     PowerShell for Pentesters
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -127,10 +139,10 @@
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
-   Linux 101 &amp; Privilege Escalation
+   Linux Tutorials
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -163,8 +175,8 @@
   <a class="reference internal" href="../cyberdefenders/index.html">
    CyberDefenders.org
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -187,8 +199,8 @@
   <a class="reference internal" href="../hackthebox/easy/index.html">
    HTB - Easy Boxes
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -204,8 +216,8 @@
   <a class="reference internal" href="../hackthebox/medium/index.html">
    HTB - Medium Boxes
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -221,8 +233,8 @@
   <a class="reference internal" href="../hackthebox/hard/index.html">
    HTB - Hard Boxes
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -238,8 +250,8 @@
   <a class="reference internal" href="../hackthebox/insane/index.html">
    HTB - Insane
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -333,19 +345,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-emperor-protects">
-   The Emperor Protects
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -354,13 +353,8 @@
         
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="linux-101-privilege-escalation">
-<h1>Linux 101 &amp; Privilege Escalation<a class="headerlink" href="#linux-101-privilege-escalation" title="Permalink to this headline">¶</a></h1>
-<p>iansdinasidnisndisandahlrasjdnsadhalsudeha</p>
-<section id="the-emperor-protects">
-<h2>The Emperor Protects<a class="headerlink" href="#the-emperor-protects" title="Permalink to this headline">¶</a></h2>
-<p>Even in Death I Serve.</p>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="linux-tutorials">
+<h1>Linux Tutorials<a class="headerlink" href="#linux-tutorials" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
 </section>
