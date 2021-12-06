@@ -1,1 +1,0 @@
-# CyberDefenders.org
