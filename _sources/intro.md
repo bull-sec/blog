@@ -1,4 +1,4 @@
-# Welcome to the Jungle
+# Welcome to the JankYard:tm:
 
 Finally decided that there needs to be a central repository of knowledge.
 
