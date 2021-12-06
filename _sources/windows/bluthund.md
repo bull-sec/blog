@@ -1,5 +1,6 @@
+# BloodHound 101
 
-## Running Bloodhound
+> Fun Fact: The German for Bloodhound is *Bluthund*
 
 ```bash
 # In one TMUX pane

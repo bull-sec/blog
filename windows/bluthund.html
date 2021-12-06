@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Running Bloodhound &#8212; The InfoSec Bible</title>
+    <title>BloodHound 101 &#8212; The InfoSec Bible</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -110,7 +110,7 @@
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Running Bloodhound
+   BloodHound 101
   </a>
  </li>
  <li class="toctree-l1">
@@ -154,6 +154,11 @@
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../notebooks.html">
+   Content with notebooks
+  </a>
+ </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../cyberdefenders/index.html">
    CyberDefenders.org
@@ -336,8 +341,11 @@
         
               <div>
                 
-  <section id="running-bloodhound">
-<h1>Running Bloodhound<a class="headerlink" href="#running-bloodhound" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="bloodhound-101">
+<h1>BloodHound 101<a class="headerlink" href="#bloodhound-101" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>Fun Fact: The German for Bloodhound is <em>Bluthund</em></p>
+</div></blockquote>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># In one TMUX pane</span>
 docker pull neo4j
 docker run --name ne04j -d -p <span class="m">7473</span>:7473 -p <span class="m">7474</span>:7474 -p <span class="m">7687</span>:7687 -v <span class="nv">$HOME</span>/neo4j/data:/data -v <span class="nv">$HOME</span>/neo4j/logs:/logs -v <span class="nv">$HOME</span>/neo4j/import:/var/lib/neo4j/import -v <span class="nv">$HOME</span>/neo4j/plugins:/plugins --env 
