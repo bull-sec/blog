@@ -7,7 +7,6 @@ We essentially have three areas to focus on when we're assessing a Linux machine
   - Binary File Version
   - Service Running on localhost
 
----
 
 - Credential Access
   - Reused Passwords (Password Spraying)
@@ -18,7 +17,6 @@ We essentially have three areas to focus on when we're assessing a Linux machine
     - Sudo Access
     - Group Privileges (Docker, LXD, etc)
 
----
 
 - Misconfiguration
     - Cron Jobs
@@ -38,7 +36,6 @@ We essentially have three areas to focus on when we're assessing a Linux machine
         - `root` $PATH Writeable
         - Directory in $PATH Writeable
     - `LD_PRELOAD` set in `/etc/sudoers`
----
 
 ## Exploits
 
