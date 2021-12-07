@@ -16,8 +16,6 @@ Cheers,
 
 *If possible try to keep all your notes in the third person, i.e. use "we" instead of "I"*
 
-[![Jupyter Book Badge](https://jupyterbook.org/badge.svg)](http://jupyterbook.org)
-
 ## Additional Notes
 
 This is now a GitHub Pages site!
@@ -27,5 +25,7 @@ This is now a GitHub Pages site!
 It's pretty damn cool!
 
 ---
+
+[![Jupyter Book Badge](https://jupyterbook.org/badge.svg)](http://jupyterbook.org)
 
 
