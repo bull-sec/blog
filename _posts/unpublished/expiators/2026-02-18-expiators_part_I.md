@@ -5,6 +5,7 @@ image: /assets/img/post_img/maltese_cross.png
 description: "++ 01110000 01110101 01110010 01100111 01100101 ++"
 categories: [40k, Expiators]
 tags: [ spacemarines renegage expiators ]     # TAG names should always be lowercase
+published: false
 ---
 
 What do you do if you enjoy the general theme of the Black Templars Chapter, but shy away from GW's official Chapters because it limits creativity? Oh and also you're a bit of a Chaos enjoyer at heart.

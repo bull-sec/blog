@@ -6,6 +6,7 @@ description: "Building a Death Guard warband"
 image: /assets/img/post_img/nurgle.jpg
 categories: [40k, Death Guard]
 tags: nurgle 40k deathguard
+published: false
 ---
 
 At some point last year (2024) I bought a Myphitic Blight-hauler.
