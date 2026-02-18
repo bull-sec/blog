@@ -1,8 +1,8 @@
 ---
 layout: post
-tags: hobby photography diy inq28
 title: "Taking Decent Photos of Miniatures"
 description: "Taking Decent Photos of Miniatures"
+tags: hobby photography diy inq28
 date: 2024-03-18 14:00:00 +0000
 published: true
 ---
