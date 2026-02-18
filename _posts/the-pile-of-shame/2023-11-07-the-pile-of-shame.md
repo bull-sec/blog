@@ -2,7 +2,7 @@
 layout: post
 tags: shame 40k plastic chaos drukhari knights
 description: "Everyone has a pile of shame, here is mine..."
-image: /assets/img/blanche1.jpg
+image: /assets/img/post_img/blanche1.jpg
 date: 2023-11-07 12:00:00 +0000
 published: true
 ---

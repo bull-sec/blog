@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Taking Decent Photos of Miniatures"
-description: "Taking Decent Photos of Miniatures"
+description: "The keyword here is 'Decent'"
+image: /assets/img/post_img/grimdark1.png
 tags: hobby photography diy inq28
 date: 2024-03-18 14:00:00 +0000
 published: true
@@ -14,6 +15,8 @@ I'm bad at taking photographs, I don't have a single good selfie and a few of my
 The trouble is, taking photos of miniatures is sort of important if you want people to see them (and you don't want them all in your house), but professional photography equipment is expensive, so I had a think and a Google as to how to take "half-decent" photos of my minis without breaking the bank (and ideally without spending much at all)
 
 > Disclaimer: I'm in no way a professional at this and my advice should be taken as that of a rank amateur
+{: .prompt-tip }
+
 
 We're going to need a few things:
 

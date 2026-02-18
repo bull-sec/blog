@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Ferrofractor Cartel: Part 1"
+title:  "Ferrofractor Cartel: Part I"
 date:   2025-01-01 12:06:00 +0000
 description: "Building a Death Guard warband"
-image: /assets/img/nurgle.jpg
+image: /assets/img/post_img/nurgle.jpg
 categories: [40k, Death Guard]
 tags: nurgle 40k deathguard
 ---
