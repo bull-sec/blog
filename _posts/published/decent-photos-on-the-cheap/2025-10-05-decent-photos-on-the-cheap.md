@@ -12,20 +12,20 @@ pin: true
 
 
 
-I'm bad at taking photographs, I don't have a single good selfie and a few of my ex-girlfriends have lamented my inability to operate a camera.
+I'm not very good at taking photographs, I don't have a single good selfie or photograph of myself, and a more than a few of my friends have lamented my inability to operate a camera in any fashion approximating some kind of competency.
 
-The trouble is, taking photos of miniatures is sort of important if you want people to see them (and you don't want them all in your house), but professional photography equipment is expensive, so I had a think and a Google as to how to take "half-decent" photos of my minis without breaking the bank (and ideally without spending much at all)
+The trouble is, taking photos of miniatures is sort of important if you want people to see them (and you don't want them all stood around awkwardly in your living room), but professional photography equipment is damned expensive, so I had a think and a Google as to how to take "half-decent" photos of my minis without breaking the bank (and ideally without spending much at all)
 
-> Disclaimer: I'm in no way a professional at this and my advice should be taken as that of a rank amateur
-{: .prompt-tip }
+> Disclaimer: I'm in no way a professional at this photography thing, and my advice should be taken as that of a rank amateur
+{: .prompt-danger }
 
 
 We're going to need a few things:
 
-- Camera
+- An Camera
 - Lights
 - Background
-- Some minis
+- Some minis to photograph
 
 ## The Camera
 
@@ -38,6 +38,9 @@ In my case it's a Samsung S23, with a 50MP rear-facing camera which I'm told is 
 [Community Guide on "Pro" Mode](https://r2.community.samsung.com/t5/Tech-Talk/Camera-pro-mode-in-depth-guide/td-p/3317971)
 
 There are also plenty of YouTube videos, and I'm positive that you'll be able to find a guide for your particular device in order to get the best out of it.
+
+> Use whatever camera you have available, the principles will still apply, although if you're attempting to take pictures with an actual potato then I wish you good luck!
+{: .prompt-tip }
 
 OK, that's our camera boxed off! Now we need some lights!
 
@@ -59,7 +62,8 @@ I've found plenty of free guides available on setting up the lights, you can fin
 
 [Setting up Lights for Beginners](https://shotkit.com/photography-lighting/)
 
-The TL;DR for lighting is that you want to get as much light onto your subject as possible without having too much that you get a glare off the light being reflected back into the apeture of the camera. 
+> The TL;DR for lighting is that you want to get as much light onto your subject as possible without having too much that you get a glare off the light being reflected back into the aperture of the camera. 
+{: .prompt-info}
 
 Trial and error is going to be key here, play around with distance, angle, and colour (if you have the option) and you'll soon figure it out. For me this is something that's easier to do than to actually explain.
 
@@ -71,27 +75,29 @@ There is no real right and wrong here, but there are some things you should avoi
 
 For example, if you were taking photos of your Chaos Warband for Mordheim you'd likely want to avoid using "Codex: Space Marines" as the background image and either put them on a black/white background, or something appropriately Grimdark. Likewise, if you have some bright pink Space Marines you probably don't want them walking down a medieval cobbled street. Common sense and colour theory will help you here.
 
-
-
-Below is one of the first attempts I made using an AoS battlemat I got in a copy of Stormbringer Magazine (the only copy I've ever bought). As you can see, the minis get drowned out because the background is so busy.
+Below is one of the first attempts I made using an AoS battlemat I got in a copy of Stormbringer Magazine (the only copy I've ever bought).
 
 ![Bad Background](https://files.catbox.moe/rft2mi.jpg)
+*You can barely even see the doggo in the above picture*
 
 As you can see, the minis (especially as they aren't even primed yet) blend into the background making it really difficult to see any details from a quick glance.
 
 Compare those to this test photo I took and you can see a massive difference:
 
 ![Test Picture of inq28 warband](https://files.catbox.moe/fq1g3c.jpg)
+*Now we can see the doggo again, yay!*
 
 Plain white and plain black work well. I find white can be a bit harsh, but for miniatures with brighter base colours (i.e. blues/reds) the light background can really make the miniature pop off.
 
 ## My Solution
 
 ![My Solution](https://files.catbox.moe/vdhjhn.jpg)
+*Ghetto solution is ghetto*
 
 Yep, that is literally a piece of black paper I tore out of a scrapbook and folded over. I used a little metal weight to really make a sharp crease and propped it up with a candle (I made sure to put the flame out first)
 
 > Note: the paper I used is roughly 30cm x 30cm, it's not A4 sized. I think if you can get a piece of A3 paper that'll be perfect.
+{: .prompt-info }
 
 I've angled my LED lamp so that it's at an angle to try and reduce shadows, reduce being the operative word as there are definitely some still there.
 
@@ -99,14 +105,15 @@ All we're going for here is the ability to take a decent photo, it doesn't have 
 
 ## How it Turned Out
 
-Black Background:
-
 ![Plaguebearer on Parade](https://files.catbox.moe/oo7s8v.jpg)
+*Frank wants to say 'Hello'*
 
 ![Plaguebearer on Parade 2](https://files.catbox.moe/ulqow1.jpg)
+*Frank thinks you're rude for not saying Hello so he's off to pastures new*
 
-This is my favourite so far, it's not true black so there is some reflection (which helps reduce shadows) 
+The fact that the background isn't true black, so there is some reflection, which helps to reduce the shadows caused by the lights.
 
+I think it looks pretty good, and with some more practise using the "Pro" mode I reckon I can get it even better. I'm sure you'll be able to pull off something far more impressive, but even if you give up at this point at least use a background sheet, nobody wants to see your carpet and your messy desk.
 
 ## Goals
 
