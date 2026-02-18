@@ -4,7 +4,7 @@ title: Playing the Waiting Game
 tags: 30k hungryhungryhippos nurglings
 description: "*loud Nurgling noises*"
 date: 2023-11-03 10:00:00 +0000
-published: false
+published: true
 ---
 
 In the words of Homer J. Simpson: "The waiting game sucks, lets play Hungry Hungry Hippos!"
