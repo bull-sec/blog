@@ -2,10 +2,9 @@
 layout: post
 title:  "Ferrofractor Cartel: Part 1"
 date:   2025-01-01 12:06:00 +0000
-image: /assets/img/krieg.jpg
-tags: test featured
-author: PaintsPlastic
-published: true
+image: /assets/img/nurgle.jpg
+categories: [40k, Death Guard]
+tags: nurgle 40k deathguard
 ---
 
 At some point last year (2024) I bought a Myphitic Blight-hauler.
@@ -16,7 +15,7 @@ I don't even remember buying it, or who I bought it from, it showed up at my wor
 
 It seems that the power of Papa Nurgle is powerful though. I eventually brought it home, and got it built up, and it sat on my desk watching over me for a few weeks. Little did I know that it was slowly infecting me.
 
-To cut a long and tedious story short, I eventually picked up a whole deathguard army to compliment my new little buddy because he looked a bit lonely.
+To cut a long and tedious story short, I eventually picked up a whole #deathguard army to compliment my new little buddy because he looked a bit lonely.
 
 ---
 
