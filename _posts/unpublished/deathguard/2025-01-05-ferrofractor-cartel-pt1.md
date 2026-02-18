@@ -9,7 +9,7 @@ tags: nurgle 40k deathguard
 published: true
 ---
 
-At some point last year (2024) I bought a Myphitic Blight-hauler.
+At some point last year (2024) I bought a Myphitic Blight-hauler. Blah Blah Blah
 
 ![Myphitic Blight Hauler](https://www.warhammer.com/app/resources/catalog/product/920x950/99120102080_ETBDeathGuardBlighthauler01.jpg?fm=webp&w=920&h=948)
 
