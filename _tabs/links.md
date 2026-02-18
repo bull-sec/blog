@@ -24,7 +24,8 @@ Decided to make a list of the channels I follow and blogs/websites I frequent, p
 - [The Poorhammer Podcast](https://www.youtube.com/@thepoorhammerpodcast) - Brad and Eric host the Poorhammer podcast, they inadvertantly end up doing lots of maths and talk a lot of crap about Space Marines, very based
 - [Luetin09](https://www.youtube.com/channel/UC8RfCCzWsMgNspTI-GTFenQ) - The King of 40k Lore (imo), great to listen to when building or painting minis, his Ork videos are generally great but the Legion of the Damned is a personal favourite.
 - [Lorehammer Podcast(RIP)](https://www.youtube.com/channel/UCq9af4kjJ_XFpu3kObtUkZQ) - AKA a bunch of Canadians read the wiki and shout at each other. Was a great podcast while it lasted.
-- [DiceCheck](https://www.youtube.com/@DiceCheck) - I'm gonna be honest, I just kinda love Bricky when he's in 40k mode, and who doesn't love a good battle report?
+- [LoreCrimes](https://www.youtube.com/@lorecrimes) - Lore from 40k and Fantasy with a bunch of grown men who should know better.
+- [DiceCheck (RIP)](https://www.youtube.com/@DiceCheck) - I'm gonna be honest, I just kinda love Bricky when he's in 40k mode, and who doesn't love a good battle report?
 - [MiniWarGaming](https://www.youtube.com/@miniwargaming) - The OGs of battle reports on YouTube, MWGDave has the most infectious enthusiasm, and the craziest Chaos army, love these guys.
 - [Arch](https://www.youtube.com/watch?v=sTSA_sWGM44) - My favouritest of the lot\*
 
