@@ -5,7 +5,7 @@ description: "The keyword here is 'Decent'"
 image: /assets/img/post_img/grimdark1.png
 tags: hobby photography diy inq28
 date: 2024-03-18 14:00:00 +0000
-published: false
+published: true
 ---
 
 
@@ -73,19 +73,19 @@ For example, if you were taking photos of your Chaos Warband for Mordheim you'd 
 
 Below is one of the first attempts I made using an AoS battlemat I got in a copy of Stormbringer Magazine (the only copy I've ever bought). As you can see, the minis get drowned out because the background is so busy.
 
-![Bad Background](https://i.imgur.com/OokzlBZ.jpg)
+![Bad Background](https://files.catbox.moe/rft2mi.jpg)
 
 As you can see, the minis (especially as they aren't even primed yet) blend into the background making it really difficult to see any details from a quick glance.
 
 Compare those to this test photo I took and you can see a massive difference:
 
-![Test Picture of inq28 warband](https://i.imgur.com/dlPMPvo.jpg)
+![Test Picture of inq28 warband](https://files.catbox.moe/fq1g3c.jpg)
 
 Plain white and plain black work well. I find white can be a bit harsh, but for miniatures with brighter base colours (i.e. blues/reds) the light background can really make the miniature pop off.
 
 ## My Solution
 
-![My Solution](https://i.imgur.com/m7RjwuJ.jpg)
+![My Solution](https://files.catbox.moe/vdhjhn.jpg)
 
 Yep, that is literally a piece of black paper I tore out of a scrapbook and folded over. I used a little metal weight to really make a sharp crease and propped it up with a candle (I made sure to put the flame out first)
 
@@ -99,9 +99,9 @@ All we're going for here is the ability to take a decent photo, it doesn't have 
 
 Black Background:
 
-![Plaguebearer on Parade](https://i.imgur.com/cpNCDQ4.jpg)
+![Plaguebearer on Parade](https://files.catbox.moe/oo7s8v.jpg)
 
-![Plaguebearer on Parade 2](https://i.imgur.com/eE94iNc.jpg)
+![Plaguebearer on Parade 2](https://files.catbox.moe/ulqow1.jpg)
 
 This is my favourite so far, it's not true black so there is some reflection (which helps reduce shadows) 
 
@@ -112,13 +112,13 @@ For those of you who frequent the Warhammer socials, you may know Garfy of [Tale
 
 Garfy has upped their game BIG TIME recently when it comes to taking pictures of dope minis, including fog and different coloured lighting effects.
 
-![Garfy's FEC](https://i.imgur.com/ndj90vW.jpeg)
+![Garfy's FEC](https://files.catbox.moe/co4boi.jpeg)
 
 How epic is that?
 
 And this one looks like it's straight from "The Mummy" (starring Brendan Fraser)
 
-![Garfy's Tomb Kings](https://i.imgur.com/mt6lX5t.jpeg)
+![Garfy's Tomb Kings](https://files.catbox.moe/q1dzr2.jpeg)
 
 Those are what inspired me to try and take "half-decent" pictures, because if Garfy can put in the effort to make those kind of images, I can at least work out how to point a light properly.
 
