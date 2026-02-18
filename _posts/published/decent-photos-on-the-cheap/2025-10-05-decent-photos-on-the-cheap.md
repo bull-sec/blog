@@ -3,6 +3,7 @@ layout: post
 title: "Taking Decent Photos of Miniatures"
 description: "The keyword here is 'Decent'... not 'Professional'"
 image: /assets/img/post_img/grimdark1.png
+categories: [Misc, Photography]
 tags: hobby photography diy inq28
 date: 2024-03-18 14:00:00 +0000
 published: true
