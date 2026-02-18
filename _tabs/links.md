@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-link
-order: 4
+order: 2
 excerpt: The Blessed Few
 ---
 
