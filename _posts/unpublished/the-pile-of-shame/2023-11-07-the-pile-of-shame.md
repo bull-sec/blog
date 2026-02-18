@@ -4,7 +4,7 @@ tags: shame 40k plastic chaos drukhari knights
 description: "Everyone has a pile of shame, here is mine..."
 image: /assets/img/post_img/blanche1.jpg
 date: 2023-11-07 12:00:00 +0000
-published: false
+published: true
 ---
 
 Everyone has a pile of shame in one form or another.
@@ -13,7 +13,7 @@ The piles range from a couple of minis, to entire armies. Much to my shame, mine
 
 I feel like using this as a bit of a therapy session and also take the time to make a list of the stuff I have to get through that's still sat in a box.
 
-![The Pile](https://i.imgur.com/dPNI9ly.jpg)
+![The Pile](https://files.catbox.moe/a5fp7e.jpg)
 *Ignore the MPCs and the Crappy DJ Controller*
 
 Yeah, it's not a small pile.
