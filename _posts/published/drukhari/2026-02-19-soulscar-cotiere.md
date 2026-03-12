@@ -6,7 +6,7 @@ description: "The call of Commorragh is strong"
 categories: [40k, Drukhari]
 tags: [ 40k, drukhari, xenos]     # TAG names should always be lowercase
 pin: false
-published: true
+published: false
 ---
 
 Up until recently, one of the best value boxes GW sold was the Drukhari Combat Patrol. It was one of the very few boxes where multiple purchases made a pretty decent amount of sense. GW recently changed it up, and now it's only really worth picking it up if you're into the Haemonculus Coven side of things. The old one was quite the collection of minis for the price (damn you inflation and the ongoing war in Ukraine), and because it was basically core infantry and some transports it was great starting point for a new player, and someone looking to build an army. RIP old Combat Patrol.
